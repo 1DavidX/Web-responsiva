@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Ajustes para el logo */
+        .navbar-brand img {
+            width: 40px; /* Tamaño ajustado del logo */
+            height: auto; /* Mantiene proporciones */
+            margin-right: 10px;
+        }
+        .navbar-brand {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        /* Ajuste del carousel */
+        .carousel-inner img {
+            height: 400px;
+            object-fit: cover; /* Asegura que las imágenes se vean proporcionadas */
+        }
+        /* Tamaño de las tarjetas */
+        .card-img-top {
+            height: 200px;
+            object-fit: cover; /* Ajusta proporciones sin deformar */
+        }
+        /* Ajuste del footer */
+        footer a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://brand.riotgames.com/static/a91000434ed683358004b85c95d43ce0/8a20a/lol-logo.png" alt="Logo">  
+                League of Legends
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://brand.riotgames.com/static/3448a13646eaa89d5c6c7d4bf0f5a7b6/9281f/logo-d-4x-zoom-rendered-00.webp" class="d-block w-100" alt="League of Legends 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://brand.riotgames.com/static/af15274058f497130fd53c916e24fd80/67ea6/09_L-Icon_Fullbleed.webp" class="d-block w-100" alt="League of Legends 2">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Información de Personajes -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Campeones Destacados</h2>
+        <p class="text-center">
+            En *League of Legends*, cada campeón tiene una historia única, habilidades especiales y roles específicos dentro del juego. Aquí presentamos algunos de los personajes más emblemáticos que forman parte del universo de Runaterra:
+        </p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <a href="https://universe.leagueoflegends.com/es_ES/champion/ahri/" target="_blank" class="text-decoration-none">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg" class="card-img-top" alt="Ahri">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Ahri</h5>
+                        <p class="card-text">La vastaya de nueve colas, conocida por su encanto y magia, captura las emociones de sus enemigos para fortalecer sus habilidades.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <a href="https://universe.leagueoflegends.com/es_ES/champion/yasuo/" target="_blank" class="text-decoration-none">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg" class="card-img-top" alt="Yasuo">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Yasuo</h5>
+                        <p class="card-text">Un espadachín experto en manipular el viento, en busca de redención tras haber sido acusado injustamente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <a href="https://universe.leagueoflegends.com/es_ES/champion/lux/" target="_blank" class="text-decoration-none">
+                        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_0.jpg" class="card-img-top" alt="Lux">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Lux</h5>
+                        <p class="card-text">La dama luminosa que controla la magia de la luz para proteger a su reino y descubrir el potencial de su poder interior.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonios -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Opiniones de Jugadores</h2>
+        <ul class="list-group">
+            <li class="list-group-item">"League of Legends siempre me sorprende con su profundidad estratégica y jugabilidad competitiva." - Juan</li>
+            <li class="list-group-item">"Es increíble cómo la comunidad se une en eventos globales como Worlds." - Ana</li>
+            <li class="list-group-item">"Me encanta cómo cada partida es única gracias a la variedad de campeones." - Carlos</li>
+        </ul>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center my-5">
+        <a href="https://www.leagueoflegends.com/" class="btn btn-primary btn-lg" target="_blank">Jugar ahora</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3" id="contact">
+        <p>Contacto: soporte@leagueoflegends.com</p>
+        <a href="#" class="text-white me-2">Facebook</a>
+        <a href="#" class="text-white">Twitter</a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
